@@ -1,6 +1,4 @@
-﻿using ClassRecordSystem.Shared;
-using DevExpress.Xpf.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,22 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ClassRecordSystem
+namespace ClassRecordSystem.Shared
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainWindow : DXWindow
+    public partial class MainPage : Page
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void DXWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            LoginPage page = new LoginPage();
-            frameMain.Navigate(page);
         }
     }
 }
