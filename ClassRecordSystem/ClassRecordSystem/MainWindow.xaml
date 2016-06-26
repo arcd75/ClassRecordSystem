@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         dx:ThemeManager.Theme="MetropolisLight"
-        Title="MainWindow" Height="702" Width="1002" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize"
+        Height="702" Width="1002" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize"
              Loaded="DXWindow_Loaded">
     <Frame x:Name="frameMain"  NavigationUIVisibility="Hidden" />
 </dx:DXWindow>

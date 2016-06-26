@@ -3,11 +3,47 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+      xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+      dx:ThemeManager.Theme="MetropolisLight"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="700" d:DesignWidth="1000"
+      FontFamily="Segoe UI Light"
+      FontSize="16"
 	Title="MainPage">
-
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderThickness="1" BorderBrush="Silver">
+            <DockPanel LastChildFill="False">
+                <Button DockPanel.Dock="Left">
+                    <Border BorderThickness="1">
+                        <TextBlock Text="Dashboard"/>
+                    </Border>
+                </Button>
+                <Button DockPanel.Dock="Left">
+                    <Border BorderThickness="1">
+                        <TextBlock Text="Activities"/>
+                    </Border>
+                </Button>
+                <Button DockPanel.Dock="Right" x:Name="btnLogout" Click="btnLogout_Click">
+                    <Border BorderThickness="1">
+                        <TextBlock Text="Logout"/>
+                    </Border>
+                </Button>
+                <Button DockPanel.Dock="Right">
+                    <Border BorderThickness="1">
+                        <TextBlock Text="Settings"/>
+                    </Border>
+                </Button>
+            </DockPanel>
+        </Border>
+        <Frame Grid.Row="1"/>
+        <Grid Grid.Row="2">
+            
+        </Grid>
     </Grid>
 </Page>

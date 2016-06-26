@@ -24,5 +24,16 @@ namespace ClassRecordSystem.Shared
         {
             InitializeComponent();
         }
+        #region Logout
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Logout();
+        }
+        private void Logout()
+        {
+            LoginPage page = new LoginPage();
+            NavigationService.Navigate(page);
+        }
+        #endregion
     }
 }

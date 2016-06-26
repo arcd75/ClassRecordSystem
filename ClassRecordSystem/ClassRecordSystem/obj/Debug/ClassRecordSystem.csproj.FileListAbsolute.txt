@@ -25,3 +25,5 @@ C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecord
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\ClassRecordSystem.pdb
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\LoginPage.baml
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\LoginPage.g.cs
+C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\MainPage.baml
+C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\MainPage.g.cs

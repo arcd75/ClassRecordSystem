@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassRecordSystem.Models;
+using DevExpress.Xpf.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +26,60 @@ namespace ClassRecordSystem.Shared
         {
             InitializeComponent();
         }
+
+
+        #region Loaded Event
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtUser.Focus();
+            btnLogin.IsDefault = true;
+        }
+        #endregion
+
+        #region LoginMethod
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            btnLogin.IsEnabled = false;
+            Login();
+            
+        }
+        private void Login()
+        {
+            using (var context = new DatabaseContext())
+            {
+                if (txtUser.Text == "")
+                {
+                    DXMessageBox.Show("No username entered", "", MessageBoxButton.OK, MessageBoxImage.Stop);
+                    txtUser.Focus();
+                }
+                else if(txtPass.Text == "")
+                {
+                    DXMessageBox.Show("No password entered", "", MessageBoxButton.OK, MessageBoxImage.Stop);
+                    txtPass.Focus();
+                }
+                else if (context.Users.Where(c => c.Name == txtUser.Text).Count() == 0)
+                {
+                    DXMessageBox.Show("The username entered is not found within the database", "", MessageBoxButton.OK, MessageBoxImage.Stop);
+                    txtUser.Focus();
+                }
+                else if (context.Users.Where(c => c.Name == txtUser.Text && c.Password == txtPass.Text).Count() == 0)
+                {
+                    DXMessageBox.Show("The username-password combination you entered is not valid", "", MessageBoxButton.OK, MessageBoxImage.Stop);
+                    txtUser.Focus();
+                }
+                else
+                {
+                    MainPage page = new MainPage();
+                    NavigationService.Navigate(page);
+                }
+                btnLogin.IsEnabled = true;
+                
+            }
+        }
+        #endregion
+
+
+
+        
     }
 }

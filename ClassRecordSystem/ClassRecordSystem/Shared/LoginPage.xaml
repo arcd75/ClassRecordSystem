@@ -9,11 +9,12 @@
       d:DesignHeight="700" d:DesignWidth="1000"
       FontFamily="Segoe UI Light"
       FontSize="16"
+      Loaded="Page_Loaded"
 	Title="LoginPage">
     <DockPanel>
         <Border DockPanel.Dock="Bottom" Padding="10" HorizontalAlignment="Center" Width="400" BorderBrush="Silver" BorderThickness="3" Margin="10">
             <DockPanel>
-                <Button Content="Login" DockPanel.Dock="Right"/>
+                <Button Content="Login" DockPanel.Dock="Right" x:Name="btnLogin" Click="btnLogin_Click"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -25,8 +26,8 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Username:" Grid.Row="0" Grid.Column="0"/>
                     <TextBlock Text="Password:" Grid.Row="1" Grid.Column="0"/>
-                    <dxe:TextEdit Grid.Column="1" Grid.Row="0"/>
-                    <dxe:TextEdit Grid.Column="1" Grid.Row="1"/>
+                    <dxe:TextEdit x:Name="txtUser" Grid.Column="1" Grid.Row="0"/>
+                    <dxe:PasswordBoxEdit x:Name="txtPass" Grid.Column="1" Grid.Row="1"/>
                 </Grid>
             </DockPanel>
         </Border>
