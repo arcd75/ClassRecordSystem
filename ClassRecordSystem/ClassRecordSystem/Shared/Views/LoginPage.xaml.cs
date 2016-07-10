@@ -1,5 +1,6 @@
 ﻿using ClassRecordSystem.Models;
 using DevExpress.Xpf.Core;
+using DevExpress.Xpf.WindowsUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace ClassRecordSystem.Shared
     /// <summary>
     /// Interaction logic for LoginPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class LoginPage : UserControl
     {
         public LoginPage()
         {
@@ -69,8 +70,10 @@ namespace ClassRecordSystem.Shared
                 }
                 else
                 {
+                    
+                    var frame = DevExpress.Xpf.Core.Native.LayoutHelper.FindParentObject<NavigationFrame>(this);
                     MainPage page = new MainPage();
-                    NavigationService.Navigate(page);
+                    frame.Navigate(page);
                 }
                 btnLogin.IsEnabled = true;
                 

@@ -76,10 +76,10 @@
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\MethodsClass.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Shared\LoginPage.xaml.cs">
+    <Compile Include="Shared\Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Shared\MainPage.xaml.cs">
+    <Compile Include="Shared\Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -94,11 +94,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Shared\LoginPage.xaml">
+    <Page Include="Shared\Views\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Shared\MainPage.xaml">
+    <Page Include="Shared\Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

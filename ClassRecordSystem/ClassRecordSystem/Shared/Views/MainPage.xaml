@@ -1,4 +1,4 @@
-﻿<Page x:Class="ClassRecordSystem.Shared.MainPage"
+﻿<UserControl x:Class="ClassRecordSystem.Shared.MainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -10,7 +10,7 @@
       d:DesignHeight="700" d:DesignWidth="1000"
       FontFamily="Segoe UI Light"
       FontSize="16"
-	Title="MainPage">
+	>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -46,4 +46,4 @@
             
         </Grid>
     </Grid>
-</Page>
+</UserControl>

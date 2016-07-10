@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Xpf.WindowsUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace ClassRecordSystem.Shared
     /// <summary>
     /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class MainPage : UserControl
     {
         public MainPage()
         {
@@ -31,8 +32,9 @@ namespace ClassRecordSystem.Shared
         }
         private void Logout()
         {
+            var frame = DevExpress.Xpf.Core.Native.LayoutHelper.FindParentObject<NavigationFrame>(this);
             LoginPage page = new LoginPage();
-            NavigationService.Navigate(page);
+            frame.Navigate(page);
         }
         #endregion
     }
