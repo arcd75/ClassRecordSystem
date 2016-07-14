@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-      dx:ThemeManager.Theme="MetropolisLight"
+      dx:ThemeManager.Theme="Office2013"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1000"
       FontFamily="Segoe UI Light"
@@ -13,7 +13,7 @@
              Background="Wheat"
 	>
     <DockPanel>
-        <Border DockPanel.Dock="Bottom" Padding="10" HorizontalAlignment="Center" Width="400" BorderBrush="Silver" BorderThickness="3" Margin="10" Background="White">
+        <Border DockPanel.Dock="Bottom" Padding="10" HorizontalAlignment="Center" Width="400" BorderBrush="#FF5478AC" BorderThickness="3" Margin="10" Background="White">
             <DockPanel>
                 <Button Content="Login" DockPanel.Dock="Right" x:Name="btnLogin" Click="btnLogin_Click"/>
                 <Grid>

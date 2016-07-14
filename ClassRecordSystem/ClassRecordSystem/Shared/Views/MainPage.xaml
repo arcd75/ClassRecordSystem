@@ -6,7 +6,7 @@
       xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
       xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
       xmlns:dxca="http://schemas.devexpress.com/winfx/2008/xaml/carousel"  x:Class="ClassRecordSystem.Shared.MainPage"
-      
+
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1000"
       FontFamily="Segoe UI Light"
@@ -20,7 +20,7 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Border Grid.Row="1" BorderThickness="0 1" BorderBrush="Silver" Background="White" >
+        <Border Grid.Row="1" BorderThickness="0 1" BorderBrush="#FF5478AC" Background="White" >
             <DockPanel LastChildFill="False">
                 <Button DockPanel.Dock="Left" BorderThickness="0" Background="Transparent" Padding="10 0">
                     <Border BorderThickness="0 1">
