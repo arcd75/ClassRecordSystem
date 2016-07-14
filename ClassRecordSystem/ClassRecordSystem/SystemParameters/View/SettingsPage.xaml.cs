@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassRecordSystem.SystemParameters.View.SettingsPageFrames;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,32 @@ namespace ClassRecordSystem.SystemParameters.View
         {
             InitializeComponent();
         }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            lbSettings.SelectedIndex = 0;
+        }
+
+        private void SettingsFrameChanger()
+        {
+            if (lbSettings.SelectedIndex == 0)
+            {
+                General page = new General();
+                SettingsFrame.Navigate(page);
+            }
+            else if (lbSettings.SelectedIndex == 1)
+            {
+                Grades page = new Grades();
+                SettingsFrame.Navigate(page);
+            }
+        }
+        private void lbSettings_SelectedIndexChanged(object sender, RoutedEventArgs e)
+        {
+            SettingsFrameChanger();
+        }
+
+        
+
+        
     }
 }

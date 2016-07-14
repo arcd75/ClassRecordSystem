@@ -86,6 +86,12 @@
     <Compile Include="SystemParameters\View\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SystemParameters\View\SettingsPageFrames\General.xaml.cs">
+      <DependentUpon>General.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParameters\View\SettingsPageFrames\Grades.xaml.cs">
+      <DependentUpon>Grades.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,6 +113,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SystemParameters\View\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemParameters\View\SettingsPageFrames\General.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemParameters\View\SettingsPageFrames\Grades.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
