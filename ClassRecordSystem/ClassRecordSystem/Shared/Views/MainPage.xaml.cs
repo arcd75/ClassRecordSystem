@@ -1,4 +1,5 @@
-﻿using DevExpress.Xpf.WindowsUI;
+﻿using ClassRecordSystem.SystemParameters.View;
+using DevExpress.Xpf.WindowsUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,5 +38,11 @@ namespace ClassRecordSystem.Shared
             frame.Navigate(page);
         }
         #endregion
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsPage page = new SettingsPage();
+            mainFrame.Navigate(page);
+        }
     }
 }

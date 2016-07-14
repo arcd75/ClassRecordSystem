@@ -10,9 +10,10 @@
       FontFamily="Segoe UI Light"
       FontSize="16"
       Loaded="Page_Loaded"
+             Background="Wheat"
 	>
     <DockPanel>
-        <Border DockPanel.Dock="Bottom" Padding="10" HorizontalAlignment="Center" Width="400" BorderBrush="Silver" BorderThickness="3" Margin="10">
+        <Border DockPanel.Dock="Bottom" Padding="10" HorizontalAlignment="Center" Width="400" BorderBrush="Silver" BorderThickness="3" Margin="10" Background="White">
             <DockPanel>
                 <Button Content="Login" DockPanel.Dock="Right" x:Name="btnLogin" Click="btnLogin_Click"/>
                 <Grid>

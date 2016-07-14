@@ -1,0 +1,33 @@
+﻿<UserControl xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"  x:Class="ClassRecordSystem.SystemParameters.View.SettingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" FontFamily="Segoe UI Light"
+                FontSize="16"
+             d:DesignHeight="500" d:DesignWidth="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Margin="20 20 10 20" BorderBrush="Silver" BorderThickness="2" Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border BorderBrush="Silver" BorderThickness="0 0 0 2">
+                    <TextBlock Text="Settings" FontFamily="Segoe UI" VerticalAlignment="Center" Margin="5 0" Foreground="Black"/>
+                </Border>
+                <dxe:ListBoxEdit Grid.Row="1">
+                    <dxe:ListBoxEditItem Content="General"/>
+                    <dxe:ListBoxEditItem Content="Grades"/>
+                </dxe:ListBoxEdit>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" Margin="10 20 20 20" BorderBrush="Silver" BorderThickness="2" Background="WhiteSmoke">
+            
+        </Border>
+    </Grid>
+</UserControl>

@@ -2,6 +2,6 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         Height="702" Width="1002" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize"
-             Loaded="DXWindow_Loaded">
+             Loaded="DXWindow_Loaded" >
     <dxwui:NavigationFrame x:Name="frameMain"   />
 </Window>

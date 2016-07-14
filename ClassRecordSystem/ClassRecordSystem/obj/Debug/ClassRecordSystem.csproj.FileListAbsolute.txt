@@ -27,3 +27,5 @@ C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecord
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\Views\MainPage.baml
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\Views\LoginPage.g.cs
 C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\Shared\Views\MainPage.g.cs
+C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\SystemParameters\View\SettingsPage.baml
+C:\Users\arcd75\Documents\GitHub\ClassRecordSystem\ClassRecordSystem\ClassRecordSystem\obj\Debug\SystemParameters\View\SettingsPage.g.cs
