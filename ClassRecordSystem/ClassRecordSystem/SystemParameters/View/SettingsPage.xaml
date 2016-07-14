@@ -11,13 +11,13 @@
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="75*"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Margin="20 20 10 20" BorderBrush="Silver" BorderThickness="2" Background="White">
+        <Border Grid.Column="0" Margin="20 20 10 20" BorderBrush="Silver" BorderThickness="1" Background="White">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Border BorderBrush="Silver" BorderThickness="0 0 0 2">
+                <Border BorderBrush="Silver" BorderThickness="0 0 0 1">
                     <TextBlock Text="Settings" FontFamily="Segoe UI" VerticalAlignment="Center" Margin="5 0" Foreground="Black"/>
                 </Border>
                 <dxe:ListBoxEdit Grid.Row="1">
@@ -26,7 +26,7 @@
                 </dxe:ListBoxEdit>
             </Grid>
         </Border>
-        <Border Grid.Column="1" Margin="10 20 20 20" BorderBrush="Silver" BorderThickness="2" Background="WhiteSmoke">
+        <Border Grid.Column="1" Margin="10 20 20 20" BorderBrush="Silver" BorderThickness="1" Background="WhiteSmoke">
             
         </Border>
     </Grid>

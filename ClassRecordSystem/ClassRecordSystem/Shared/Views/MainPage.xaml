@@ -20,7 +20,7 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Border Grid.Row="1" BorderThickness="0 1" BorderBrush="Silver" >
+        <Border Grid.Row="1" BorderThickness="0 1" BorderBrush="Silver" Background="White" >
             <DockPanel LastChildFill="False">
                 <Button DockPanel.Dock="Left" BorderThickness="0" Background="Transparent" Padding="10 0">
                     <Border BorderThickness="0 1">
